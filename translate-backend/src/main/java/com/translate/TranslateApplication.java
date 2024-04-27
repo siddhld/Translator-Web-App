@@ -15,9 +15,6 @@ import com.translate.config.TranslateConfigProperties;
 @SpringBootApplication
 @EnableConfigurationProperties(TranslateConfigProperties.class)
 public class TranslateApplication {
-
-	@org.springframework.beans.factory.annotation.Value("${API_KEY}")
-	static String api;
 	public static void main(String[] args) {
 		SpringApplication.run(TranslateApplication.class, args);
 	}
