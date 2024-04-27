@@ -30,7 +30,7 @@ function Translator({ value, set }) {
     setLoading(true);
     axios
       .post(
-        "https://translator-web-app-backend.onrender.com",
+        "https://translator-web-app-backend.onrender.com/translate",
         {
           text: text,
           sourceLang: "",
